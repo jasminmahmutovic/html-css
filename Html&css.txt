@@ -1,0 +1,74 @@
+Hur man gör med git:
+-Git init
+-Git remote add origin ...
+-Git add --all
+-Git commit -m "valfritext"
+-Git push -u origin master (Behövs bara 1 gång/mapp)
+
+Ladda ner gitprojekt:
+-Skapa en valfri mapp först
+-cd --> den mappen
+-Git clone (sen en länk från github)
+
+-Git pull
+-Git push
+-Git add --all
+-Git status
+-ls
+
+Vanliga HTML-taggar:
+<!DOCTYPE HTML>
+<html></html>
+
+<head></head> - lägger man in titel och länkar till CSS
+<link rel="stylesheet" type="text/css" href="namnet på css filen"> - detta görs alltid i HEAD taggen.
+
+<body></body> - här är all main kod
+<h1></h1> rubriker. h1 är största och h6 den minsta
+
+<div></div> - skapar grupper
+klasser skapas alltid med en parent(förälder) och därefter en child(barn)
+t.ex: <div class="parent">
+	<div class="child">
+	</div>
+	</div>
+
+z-index: x; - Anger vart elementet ska ligga i 3D, alltså i djupet. Negativt lägger elementet mer djupare in i skärmen. Positivt lägger elementet mer utåt mot användaren.
+href="#" - skickar dig till toppen av sidan. #-hashtagen leder dig inte vidare utan bara upp till början av sidan.
+
+Flex:
+display: flex;
+justify-content: center;
+align-items: center; (används för att centrera i mitten, läggs i parent ifall child har ett innehåll så som en rutan som ska centreras)
+
+flex:none; - anpassar inte storleken
+flex-direction:row; - Åt vilket håll innehållet ska anpassa sig. Row t.ex gör så att dem anpassar sig i en rad.
+
+<section></section> - sektioner/grupper. Används för att dela upp saker.
+
+position: absolute; - anger positionen på innehållet till absolute. Då kan man använda sig utav "left", "top", "bottom". Läggs i förälder.
+position: relative; - håller sig relativ till dokumentet/parents position och utgå från då respektive kant.
+margin: Xpx; - knuffar inåt
+padding: Xpx; - knuffar utåt
+
+Man bygger alltid sin kod som parent -> child. Det är för att lättare styla i CSS.
+
+Vid länkar kan man få bort strecket under genom att sätta dit:
+-text-decoration:none; - då försvinner alla "dekorationer" från texten/webbläsarens egna styling.
+
+-:nth-of-type(x) - byt ut x:et mot nummer du har i sectioner/grupper för att specifikt välja den du vill styla.
+
+Utvecklare använder sig av sätt som bootstrap för att underlätta för sig själva. Varför återuppvinna hjulet om och om igen? Går fortare, är mer produktivt och bättre för alla.
+
+Alternativ för bootstrap:
+-Bootstrap
+-Bulma
+-Material-UI
+-Tailwind CSS
+-Semantic UI
+
+Singlepage: En singel sida, finns inga länkar som tar dig vidare.
+Multipage: En sida med fler sidor, alltså ett sätt att ta dig vidare till andra sidor som är anslutna med huvudsidan, t.ex Kontakt, Om...
+
+<img> tagg använder man src(source) i html.
+background-image: använder URL i CSS 
